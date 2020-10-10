@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+    <title>Anasayfa</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+
+        #div{
+            border:2px solid black;
+            background-color: appworkspace;
+            width:750px;
+            height:700px;
+            position: relative;
+            margin: auto;
+
+        }
+        #genelDiv{
+            border:1px solid black;
+            width:730px;
+            height:680px;
+            margin:10px;
+            background-color:white;
+
+        }
+
+        #kayitBolum_Div{
+            border:1px solid black;
+            width:312px;
+            height:470px;
+            margin:10px;
+            float:left;
+
+        }
+        #menu_Div{
+            width:728px;
+            height:35px;
+            background-color: orange;
+            margin-top: 150px;
+            border:1px solid darkorange;
+
+        }
+        .menu_AltDiv{
+            width:139px;
+            height:30px;
+            float:left;
+            border:1px solid darkorange;
+            text-align: center;
+            padding:2px;
+
+        }
+        #baslik{
+
+            width:726px;
+            height:148px;
+            border:2px solid darkorange;
+            float:left;
+        }
+
+        #header{
+            background-image: url(turuncu.jpg);
+            width:421px;
+            height:148px;
+            float:left;
+
+
+        }
+        #logo{
+            height:50px;
+            width:305px;
+            float:left;
+            margin-top:25px;
+
+        }
+
+        #logo_konum{
+            height:100px;
+            width:300px;
+
+        }
+
+        #kayit_ol_baslik{
+            text-align: center;
+            width:300px;
+            height:30px;
+            font-size: 25px;
+            border:1px solid black;
+            margin:5px;
+
+        }
+
+        #kullanici_islemler{
+            background-color:orange;
+            border:1px solid black;
+            width:280px;
+            margin:5px;
+            height: 390px;
+            padding: 10px;
+            color:white;
+            font-size:20px; 
+            float:left;
+
+        }
+        .input{
+            position:absolute;
+            right:5px;
+            left:165px;
+            width:155px;
+            height:20px;
+
+        }
+        #gonder_buton{
+            border-radius: 10px;
+            width:80px;
+            height:30px;
+            margin-left:50px;
+        }
+        #temizle_buton{
+            border-radius: 10px;
+            width:80px;
+            height:30px;
+            margin-right: 50px;
+
+        }
+        #takim{
+            position: absolute;
+            left:164px;
+            width:159px;
+            height:20px;
+        }
+        #erkek{
+            position: absolute;
+            left:160px;
+
+        }
+        #kadin{
+            position: absolute;
+            left:235px;
+
+        }
+        .linkler{
+            text-decoration: none;
+            color:white;
+        }
+        #orta_Cerceve{
+            width:726px;
+            height:490px;
+            border:2px solid darkorange;
+
+        }
+        #resim_bolumu{
+            border:1px solid black;
+            width:370px;
+            height:470px;
+            margin:10px;
+            float:left;
+        }
+
+        #paragraf{
+            border:1px solid black;
+            height:150px;
+            width:330px;
+            margin-top:300px;
+            margin-left:15px;
+            font-size:16px;
+            padding:5px;
+
+        }
+        #resim1{
+            height:130px;
+            width:170px;
+            float:left;
+            padding:5px;
+            border-radius:14px;
+        }
+        #resim2{
+            height:130px;
+            width:170px;
+            float:left;
+            padding:5px;
+            border-radius:14px;
+        }
+        #resim3{
+            height:130px;
+            width:170px;
+            float:left;
+            padding:5px;
+            border-radius:14px;
+        }
+        #resim4{
+            height:130px;
+            width:170px;
+            float:left;
+            padding:5px;
+            border-radius:14px;
+        }
+
+
+
+
+    </style>
+
+
+</head>
+<body>
+<div id="div">
+
+    <div id="genelDiv">
+
+        <div id="baslik">
+
+            <div id="logo">
+                <img src="logg.png" id="logo_konum"/>
+            </div>
+
+            <div id="header">
+
+            </div>
+
+        </div>
+
+        <div id="menu_Div">
+            <div class="menu_AltDiv">
+                <a href="https://youtube.com" class="linkler">Ana Sayfa</a>
+            </div>  
+            <div class="menu_AltDiv">
+                <a href="https://twitter.com" class="linkler">İndirmeler</a> 
+            </div>  
+            <div class="menu_AltDiv">
+                <a href="https://linkedin.com" class="linkler">Forum</a> 
+            </div>  
+            <div class="menu_AltDiv">
+                <a href="https://haberler.com" target="_blank" class="linkler">Haberler</a> 
+            </div>  
+            <div class="menu_AltDiv">
+                <a href="https://youtube.com" target="_blank" class="linkler">İletişim</a> 
+            </div>  
+        </div>
+
+        <div id="orta_Cerceve">
+            <div id="kayitBolum_Div">
+                <div id="kayit_ol_baslik">
+
+                    KAYIT OL
+
+                </div>
+
+                <div id="kullanici_islemler">
+                    <form id="form" method="post" action="javascript: alert('Kayıt Başarılı');" > 
+
+                        <p>Adı:<input type="text" name="ad" class="input" maxlength="20" required /></p>
+                        <p>Soyadı:<input type="text" name="soyad" class="input" maxlength="20" required/></p>
+                        <p>E-posta Adresi:<input type="email" name="email" class="input"  required/></p>
+                        <p>Kullanıcı Adı:<input type="text" name="kullanici_ad" class="input" required/></p>
+                        <p>Şifre:<input type="password" name="pass"  class="input" required/></p>
+                        <p>Takım:<select id="takim" name="takim" required>
+                                <option selected name="takim">Takım Seç..</option>
+                                <option>Galatasaray</option>
+                                <option>Fenerbahçe</option>
+                                <option>Beşiktaş</option>
+                            </select>
+
+                        <p>Cinsiyet:<label id="erkek"  name="cins"><input type="radio" name="cinsiyet" value="erkek" required/>BAY</label> 
+                            <label id="kadin"  name="cins"><input type="radio" name="cinsiyet" value="kadin"  required/>BAYAN</label></p>
+
+
+
+                        <input type="submit" value="Gonder" id="gonder_buton" />
+                        <input type="reset" value="Temizle" id="temizle_buton"/> 
+
+                    </form>
+                </div>
+            </div>
+
+            <div id="resim_bolumu">
+
+                <div id="resim1" class="resimler">
+                    <img src="images/resim1.jpg" id="resim1" />
+                </div>
+
+                <div id="resim2" class="resimler">
+                    <img src="images/resim2.jpg" id="resim2" />
+                </div>
+
+                <div id="resim3" class="resimler">
+                    <img src="images/resim3.jpg" id="resim3" />
+                </div>
+
+                <div id="resim4" class="resimler">
+                    <img src="images/resim4.jpg" id="resim4" />
+                </div>
+                <div id="paragraf">
+                    Oculus VR, Palmer Luckey, Brendan Iribe, Michael Antonov ve Nate Mitchell tarafından kurulan Amerikalı sanal gerçeklik teknoloji ve yazılım ürünleri şirketidir. Sanal gerçeklik kulaklığı ve başa takılı ekran'lar üretir. Temmuz 2012'de Irvine, Kaliforniya'da kuruldu, şimdi Menlo Park, Kaliforniya'da bulunuyor.
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
